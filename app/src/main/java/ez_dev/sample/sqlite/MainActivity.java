@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
             String textDatabase = bookDAO.getData().toString();
             binding.tvDatabase.setText(textDatabase);
         });
+        binding.btnRead.performClick();
         binding.btnCreate.setOnClickListener(v -> {
             Book book = new Book(-1, "title", 10);
             bookDAO.insertData(book);

@@ -14,7 +14,7 @@ public class Book {
         this.id = id;
         this.title = title;
         this.price = price;
-        Log.i("INIT_BOOK",this.toString());
+        Log.i("INIT_BOOK", this.toString());
     }
 
     //  getter - setter
@@ -45,10 +45,6 @@ public class Book {
     @NonNull
     @Override
     public String toString() {
-        return "Book{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", price=" + price +
-                '}';
+        return "\nBook{" + "id=" + id + ", title='" + title + '\'' + ", price=" + price + '}';
     }
 }
